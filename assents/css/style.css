@@ -49,6 +49,11 @@ h5{
     text-align: center;
 }
 
+.sub2{
+    font-size: 22px;
+    color: #000000;
+    text-align: center;
+}
 .sub3{
     font-size: 29px;
     color: #6f4285;
@@ -162,4 +167,8 @@ h5{
 }
 .fa-database{
     color: rgb(4, 82, 128);
+}
+.logo{
+    width: 40px;
+    margin: 10px;
 }

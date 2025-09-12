@@ -1,12 +1,12 @@
 body {
-    background-color: #d8b1eb;
+    background-color: #965ebe;
     font-family: sans-serif;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 0px;
     padding:0px;
-    background-image: linear-gradient(to right,#d7a6f0,#9a58bb);
+    background-image: linear-gradient(to right,#d7a6f0,#965ebe);
     border-radius: 9%;
 }
 
@@ -31,13 +31,29 @@ h5{
     color: #6f4285;
 }
 .botao-link {
-    background: linear-gradient(to right, #9b67b3, #784194);
+    background: linear-gradient(to right, #9b67b3, #965ebe);
     color: #ebd4ff;
     padding: 20px 40px;
     border-radius: 9px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    animation: pulsar 2s ease-in-out infinite;
+}
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgb(111, 66, 133);}
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px 10px rgba(46, 15, 61, 0);}
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(111, 66, 133, 0);}
 }
 
 .botao-link:hover {
@@ -59,7 +75,7 @@ h5{
 }
 .sub3{
     font-size: 32px;
-    color: #6f4285;
+    color: #60247e;
 }
 
 .sub5{
@@ -80,17 +96,17 @@ h5{
 }
 
 .cabecalho{
-    background-color: #6f4285;
+    background-color: #784194;
     padding: 20px;
 }
 .cabecalhO{
-    background-color: #6f4285;
+    background-color: #784194;
    margin-left: 50px;
    margin-right: 50px;
    padding: 15px;
 }
 .rodape{
-    background-color: #6f4285;
+    background-color: #784194;
     padding: 10px;
 
 }
@@ -117,13 +133,6 @@ h5{
 .boxcontato{
     text-align: center;
 }
-.enviar{
-    height: 40px;
-    width: 75px;
-    background:linear-gradient(to right,#986cad,#6f4285);
-    border-radius: 9%;
-    border-color: #986cad;
-}
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -137,7 +146,7 @@ h5{
     padding: 1rem;
     width: 10rem;
     text-align: center;
-    background: linear-gradient(to right,#9b67b3,#784194);
+    background: linear-gradient(to right,#965ebe,#965ebe);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     border-radius: 20%;
 }
@@ -179,7 +188,41 @@ h5{
     color: rgb(4, 82, 128);
 }
 .logo{
-    width: 100px;
-    margin: 30px;
+    width: 50px;
+    margin: 8px;
     border-radius: 20%;
+}
+.botao-pulsar {
+    color: #000000;
+    background-color: #3246fc;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    animation: pulsar 2s ease-in-out infinite;
+}
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(4, 11, 105, 0.7);}
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0);}
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);}
+}
+
+.about{
+    margin: 1.5rem 10rem;
+    padding: 2rem 4rem;
+    background: #965ebe;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.about:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
